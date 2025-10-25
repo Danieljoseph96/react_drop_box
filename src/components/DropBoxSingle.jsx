@@ -58,6 +58,7 @@ const DropBoxSingle = () => {
         ) : (
           <p>Drag and drop image files here, or click to select files</p>
         )}
+        {isDragReject && <p className="error">Unsupported file type...</p>}
       </div>
 
       <div className="preview-container">
